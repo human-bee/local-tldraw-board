@@ -1,0 +1,18 @@
+.DS_Store
+node_modules/
+*.log
+.env
+.env.*
+
+# Local board state and generated exports live outside the plugin by default.
+boards/
+exports/
+media/
+
+# Development-only browser recording scratch space.
+assets/*capture/
+*.webm
+plugins/local-tldraw-board/assets/service/node_modules/
+plugins/local-tldraw-board/assets/*capture/
+plugins/local-tldraw-board/assets/*.webm
+plugins/local-tldraw-board/assets/local-tldraw-board-demo-previous-*.mp4

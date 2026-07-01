@@ -1,0 +1,20 @@
+{
+  "name": "local-tldraw-board-marketplace",
+  "interface": {
+    "displayName": "Local tldraw Board"
+  },
+  "plugins": [
+    {
+      "name": "local-tldraw-board",
+      "source": {
+        "source": "local",
+        "path": "./plugins/local-tldraw-board"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

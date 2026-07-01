@@ -1,0 +1,21 @@
+Post 1:
+
+small agent-harness thing I wanted badly enough to make real:
+
+a local tldraw board Codex can edit through MCP while I watch in the browser.
+
+use case: turn screenshots + thread context into an editable visual QA board that survives restarts.
+
+video below.
+
+Reply / tutorial:
+
+link: https://github.com/human-bee/local-tldraw-board
+
+quick setup:
+1. install the plugin
+2. `node scripts/setup.mjs`
+3. `node scripts/install-launch-agent.mjs`
+4. open `127.0.0.1:4876/?board=my-board`
+
+then ask Codex to use `local-tldraw` to arrange, annotate, save, or export.

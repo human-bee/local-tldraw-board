@@ -1,0 +1,25 @@
+{
+  "name": "tldraw-local-mcp",
+  "version": "1.0.0",
+  "description": "Local persistent tldraw board with a Codex MCP bridge.",
+  "main": "server/mcp-server.mjs",
+  "scripts": {
+    "dev": "node server/web-server.mjs",
+    "mcp": "node server/mcp-server.mjs",
+    "check": "node --check server/web-server.mjs && node --check server/mcp-server.mjs"
+  },
+  "keywords": [],
+  "author": "Ben Steinher",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "express": "^5.2.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tldraw": "^5.1.1",
+    "vite": "^8.1.0",
+    "ws": "^8.21.0",
+    "zod": "^4.4.3"
+  }
+}

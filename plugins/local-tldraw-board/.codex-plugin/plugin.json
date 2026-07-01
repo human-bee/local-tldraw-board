@@ -1,0 +1,44 @@
+{
+  "name": "local-tldraw-board",
+  "version": "0.1.0",
+  "description": "Persistent local tldraw boards with a Codex MCP bridge for visual iteration, screenshots, and design review.",
+  "author": {
+    "name": "Ben Steinher"
+  },
+  "license": "MIT",
+  "keywords": [
+    "tldraw",
+    "mcp",
+    "visual-iteration",
+    "whiteboard",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Local tldraw Board",
+    "shortDescription": "Use persistent local tldraw boards from Codex.",
+    "longDescription": "Local tldraw Board gives Codex a durable visual workspace: a localhost tldraw editor for human review, a local MCP bridge for tool-driven edits, board snapshots saved under the user profile, and helper scripts for setup, launch, health checks, and opening named boards.",
+    "developerName": "Ben Steinher",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "MCP",
+      "Visual iteration",
+      "Local persistence"
+    ],
+    "defaultPrompt": [
+      "Open a local tldraw board for this project.",
+      "Arrange these screenshots on a tldraw board.",
+      "Export the current local board as a PNG."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [
+      "./assets/screenshot-launch-demo.png",
+      "./assets/local-tldraw-board-launch-demo-poster.png",
+      "./assets/social-card.png"
+    ]
+  }
+}
