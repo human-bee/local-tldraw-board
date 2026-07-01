@@ -21,7 +21,11 @@ See [`local-tldraw-board-demo.mp4`](./plugins/local-tldraw-board/assets/local-tl
 
 ## Install In Codex
 
-In Codex Desktop, open the plugin marketplace add dialog and use:
+In Codex Desktop:
+
+1. Open `Plugins`.
+2. Use the top-right menu to add a plugin marketplace.
+3. Fill the marketplace form like this:
 
 ```text
 Source: human-bee/local-tldraw-board
@@ -31,10 +35,14 @@ Sparse paths:
 plugins/local-tldraw-board
 ```
 
+4. Add the marketplace.
+5. Open the new `Local tldraw Board` marketplace entry.
+6. Install and enable `Local tldraw Board`.
+
 You can also add the marketplace from the Codex CLI:
 
 ```bash
-codex plugin marketplace add human-bee/local-tldraw-board --ref main
+codex plugin marketplace add human-bee/local-tldraw-board --ref main --sparse .agents/plugins --sparse plugins/local-tldraw-board
 ```
 
 After installing the plugin, restart Codex if prompted.
