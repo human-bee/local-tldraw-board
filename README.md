@@ -1,8 +1,8 @@
-# Local tldraw Board for Codex
+# Local tldraw Board
 
-Persistent local tldraw boards that Codex can edit through MCP while you watch in the browser.
+Persistent local tldraw boards that agents can edit through MCP while you watch in the browser.
 
-Use it when you want an agent to arrange screenshots, annotate a UI review, build a visual spec sheet, or keep an editable whiteboard alive across Codex restarts.
+Use it when you want an agent to arrange screenshots, annotate a UI review, build a visual spec sheet, or keep an editable whiteboard alive across app restarts.
 
 ![Local tldraw Board social card](./plugins/local-tldraw-board/assets/social-card.png)
 
@@ -13,7 +13,7 @@ Use it when you want an agent to arrange screenshots, annotate a UI review, buil
 - Durable board snapshots in `~/.codex/local-tldraw-board/boards`.
 - Persistent media storage in `~/.codex/local-tldraw-board/media`.
 - Export helpers for PNG/SVG-style board output.
-- A Codex skill that teaches the agent the setup, recovery, and visual verification workflow.
+- Agent skill/plugin metadata for Codex, Claude Code, and Cursor.
 
 ## Demo
 
@@ -46,6 +46,37 @@ codex plugin marketplace add human-bee/local-tldraw-board --ref main --sparse .a
 ```
 
 After installing the plugin, restart Codex if prompted.
+
+## Install In Claude Code
+
+Claude Code can add this repo as a plugin marketplace:
+
+```text
+/plugin marketplace add human-bee/local-tldraw-board
+/plugin install local-tldraw-board@local-tldraw-board
+```
+
+CLI equivalent:
+
+```bash
+claude plugin marketplace add human-bee/local-tldraw-board --sparse .claude-plugin plugins/local-tldraw-board
+claude plugin install local-tldraw-board@local-tldraw-board
+```
+
+See [docs/claude-code.md](./docs/claude-code.md).
+
+## Install In Cursor
+
+Cursor can use the bundled plugin metadata, or just the MCP config:
+
+```bash
+mkdir -p ~/.cursor/plugins/local
+ln -s /path/to/local-tldraw-board/plugins/local-tldraw-board ~/.cursor/plugins/local/local-tldraw-board
+```
+
+Restart Cursor or run `Developer: Reload Window`.
+
+For direct MCP setup, copy the config from [docs/cursor.md](./docs/cursor.md) into `.cursor/mcp.json` or `~/.cursor/mcp.json`.
 
 ## First Run
 

@@ -1,6 +1,6 @@
 ---
 name: local-tldraw-board
-description: Use persistent local tldraw boards from Codex through the local-tldraw MCP bridge. Trigger when users ask to create, open, inspect, arrange, edit, screenshot, or export durable tldraw boards, visual design boards, image mockup boards, or local whiteboards controlled by Codex.
+description: Use persistent local tldraw boards through the local-tldraw MCP bridge. Trigger when users ask to create, open, inspect, arrange, edit, screenshot, or export durable tldraw boards, visual design boards, image mockup boards, or local whiteboards controlled by an agent.
 ---
 
 # Local tldraw Board

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "local-tldraw": {
+      "cwd": "${CLAUDE_PLUGIN_ROOT}",
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/assets/service/server/mcp-server.mjs"
+      ],
+      "env": {
+        "LOCAL_TLDRAW_URL": "http://127.0.0.1:4876"
+      }
+    }
+  }
+}

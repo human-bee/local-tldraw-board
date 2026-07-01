@@ -1,0 +1,13 @@
+---
+description: Use local tldraw boards for durable visual QA, design review, screenshot organization, and product spec work.
+alwaysApply: false
+---
+
+Use the `local-tldraw` MCP server when a durable visual board would make the work clearer than prose alone.
+
+- Confirm the local web bridge is running before using board tools.
+- Ask the user to open `http://127.0.0.1:4876/?board=<board-id>` when no browser editor is connected.
+- Prefer idempotent board-edit scripts so repeated tool calls do not duplicate everything.
+- Save the snapshot after meaningful board edits.
+- Verify visual layouts with a browser screenshot when the board is intended for user review.
+- Do not store secrets or credentials on boards.

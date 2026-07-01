@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "local-tldraw": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./assets/service/server/mcp-server.mjs"
+      ],
+      "env": {
+        "LOCAL_TLDRAW_URL": "http://127.0.0.1:4876"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "local-tldraw-board",
+  "owner": {
+    "name": "Ben Steinher"
+  },
+  "plugins": [
+    {
+      "name": "local-tldraw-board",
+      "source": "./plugins/local-tldraw-board",
+      "description": "Persistent local tldraw boards with an MCP bridge for visual iteration, screenshots, and design review.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Ben Steinher"
+      },
+      "homepage": "https://github.com/human-bee/local-tldraw-board",
+      "repository": "https://github.com/human-bee/local-tldraw-board",
+      "license": "MIT",
+      "keywords": [
+        "tldraw",
+        "mcp",
+        "visual-iteration",
+        "whiteboard",
+        "agent"
+      ]
+    }
+  ]
+}
